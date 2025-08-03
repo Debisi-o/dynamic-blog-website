@@ -1,0 +1,76 @@
+# Project Plan: Dynamic Blog Website
+
+## 1. Objective
+
+Build a responsive multi-page blog website that supports CRUD operations using JavaScript and localStorage, and manage the entire project with Git & GitHub.
+
+---
+
+## 2. Pages to Build
+
+- index.html — Homepage that displays all blog posts
+- new-post.html — Page to create new blog posts
+- post.html — Page to view and edit an individual post
+
+---
+
+## 3. JavaScript Functionality Plan
+
+### For index.html:
+- Load blog posts from localStorage
+- Display them in a list/grid
+- Link each post to post.html with query params (e.g., post.html?id=1)
+
+### For new-post.html:
+- Form with fields: title, content, optional image
+- Validate inputs before saving
+- Save post to localStorage with unique ID
+
+### For post.html:
+- Read post ID from URL
+- Load post from localStorage and display content
+- Edit mode: allow updating title/content
+- Delete button: remove post from localStorage
+
+---
+
+## 4. Folder Structure
+
+- index.html
+- new-post.html
+- post.html
+- styles.css
+- script/
+  - main.js
+  - newPost.js
+  - postPage.js
+- utils/
+  - storage.js (helper functions for localStorage)
+
+---
+
+## 5. Git & GitHub Workflow
+
+- `main` branch: production-ready code
+- Feature branches for each task:
+  - `feature/homepage`
+  - `feature/new-post`
+  - `feature/view-edit-post`
+  - `feature/delete-post`
+  - `feature/styling`
+- Minimum of 10–15 meaningful commits
+- Use pull requests for merging into `main`
+
+---
+
+## 6. Bonus Features (Optional)
+
+- Responsive styling for mobile and tablet
+- Option to upload image and save as base64 in localStorage
+- Timestamp for each post (createdAt)
+
+---
+
+## 7. Deployment
+
+- Use GitHub Pages to host the live version of the project
