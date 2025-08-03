@@ -22,8 +22,8 @@ document.getElementById('updateBtn').onclick = () => {
     alert("Post updated!");
 };
 
-// document.getElementById('deleteBtn').onclick = () => {
-//     const posts = getPosts().filter(p => p.id !== postId);
-//     savePosts(posts);
-//     window.location.href = "index.html";
-// };
+document.getElementById('deleteBtn').onclick = () => {
+    const posts = getPosts().filter(p => p.id !== postId);
+    savePosts(posts);
+    window.location.href = "index.html";
+};
